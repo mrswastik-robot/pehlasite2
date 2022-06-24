@@ -1,0 +1,165 @@
+div{
+
+}
+
+body{
+  margin: 0;                                 /*body me apan ne har side ka margin 0 kr diya aur uske baad bhi kaam nhi banta kyunki h1 by default margin rkhta to uska bhi manually top margin 0px krna pada*/
+  text-align: center;
+  font-family: 'Merriweather', serif;
+                     /* pehle apan ne upar waale div k andar background color de rkha tha to jaha jaha div tha har jagah ka background whi ho gaya basically pure body ka , phir wha se hatakar top-container me backgroundcolo dala taaki middlecontainer ka color greyish kiya ja ske , yhi krna hota hain div k andar classes banao aur jaroorat hisaab colors aur properties do*/
+
+}
+
+
+h1{
+  margin: 0 auto;              /*isse center me align ho jayega kyunki hamne block element ka width change kiya tha na to ye to krna hi padta , can also be written as" margin : 0 auto 0 auto; " */
+  width: 15%;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  color: #66BFBF;                         /* 100% equals 16px in font-size , its almost equals 90px here*/
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;                             /* it's 40px here, 40/16=2.5 */
+  color: #66BFBF;
+  font-weight: normal;
+  padding-bottom: 10px;                       /* ye apan ne h2 wala hello aur my skills k baad waali lines k beech me gap dene k liye kiya*/
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+a:link{
+  color: #11999E;
+}
+
+.topcontainer{
+  position: relative;
+  padding: 7% 0 0 0;
+  background-color: #E4F9F5;
+  height: 720px;                    /*720px kyun kiya jaan'ne k liye mountain k css me jaa, mountain upar laana tha mujhe taaki site ka homepagea aur accha lage, uske liye pura top container ka height kam kiya aur mountain ko margin diya*/
+}
+
+.lower-cloud
+{
+  position: absolute;
+  left: 25rem;
+  bottom: 18.75rem;
+}
+                                        /*upper aur lower clouds dono ka parent top container hain , bhale hi hain dono absolute pr hain top container k relative hi*/
+.upper-cloud{
+  position: absolute;
+  right: 25rem;
+  top: 3.438rem;
+}
+
+.mountain{
+  position: relative;
+  bottom: 1.563rem;                    /* are wahhh khud se dimaag laga kr mountain ko aur pura top-container ko upar ki taraf shift kr diya , top container ko to height dii aur mountain ki position relative kr k margin de diya intital postiton k bottom se*/
+}
+
+.skill-row{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+p{
+  line-height: 2;     /* skillsrow se kaatkar yaha chipka diya taaki har jagah line heighy badh jaaye dekhne me accha lage*/
+}
+
+hr{
+  background-color: white;
+  border-style: dotted none none;
+  border-color: grey;
+  border-width: 5px;
+                      /* height: 0px hain yaha pr*/
+  margin: 75px auto;
+  width: 5%;
+}
+
+.code-img{
+  width: 35%;                /*width set to 25% of parent class which is "skill-row" for both codeimg and chilliimg*/
+  height: 170px;
+  float: left;
+  margin-right: 30px;
+}
+
+.chilli-img{
+  width: 35%;
+  height: 180px;
+  float: right;
+  margin-left: 30px;
+}
+
+.bottom-container{
+  background-color: #66BFBF;
+  padding: 30px 0 20px;
+
+}
+
+.intro{
+  width: 30%;
+  margin: auto;        /*whi hua jo itni baar se hota aa raha, pehel center aligned tha ye block element par jaise hi width change ki ceneter aligned se hatt gaya phir manually iska margin: auto from all 4 sides kr k center align hua*/
+}
+
+.middle-container{
+  background-color: #F5F5F5;
+  padding-bottom: 100px;
+}
+
+.profile{
+  padding-top: 4%;
+}
+
+.contact-me{
+  width: 40%;
+  margin: 40px auto 40px;
+}
+
+a{
+  text-decoration: none;                                                        /* isse links pr underline nhi aayega, by default text-decoration: underline: rehta hain*/
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+}
+
+a:hover{
+  color: #EAF6F6;
+}
+
+.copyright{
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #1199e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #1199e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #1199e);
+  background-image: -o-linear-gradient(top, #11cdd4, #1199e);
+  background-image: linear-gradient(to bottom, #11cdd4, #1199e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}                                          /* ye pura to cssbuttongenerator.cum se copy kr liya hain bas class name crosscheck krlena .btn hi hona chahiye html me bhi*/
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
